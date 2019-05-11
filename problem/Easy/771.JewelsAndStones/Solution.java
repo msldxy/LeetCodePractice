@@ -8,10 +8,10 @@ class Solution {
     public int numJewelsInStones(String J, String S) {
         int count = 0;
         for(int i = 0;i < S.length(); i++){
-            char ch = S.charAt(i);
+            char ch = S.charAt(i);				//第一次循环，获得S字符串的每一个字符
             for(int j = 0;j < J.length(); j++){
                 if(ch == J.charAt(j))
-                    count++;
+                    count++;					//将得到的每一个字符与J字符串的每一个字符比较，有相同则计数加一
             }
         }
         return count;
