@@ -1,0 +1,22 @@
+﻿Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
+
+The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.
+
+You may assume the integer does not contain any leading zero, except the number 0 itself.
+
+/*
+题意解读：给定一个非空数组，其每个元素都是非负数，并且都是单个数字，因此可以拼接成一个数字，于是这个数组不能有前置的0，即索引0的值不能为0
+要求，将数组传化成对应的数字，再加上1，再转换成数组
+
+*/
+Example 1:
+
+Input: [1,2,3]
+Output: [1,2,4]
+Explanation: The array represents the integer 123.
+
+Example 2:
+
+Input: [4,3,2,1]
+Output: [4,3,2,2]
+Explanation: The array represents the integer 4321.
