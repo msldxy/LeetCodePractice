@@ -1,0 +1,17 @@
+Given two binary strings, return their sum (also a binary string).
+
+The input strings are both non-empty and contains only characters 1 or 0.
+
+//题意解读：有两个代表二进制数的字符串，将其求和
+//想法：将字符串转化为数组，分别对位相加最后再转换回来
+
+Example 1:
+
+Input: a = "11", b = "1"
+Output: "100"
+
+Example 2:
+
+Input: a = "1010", b = "1011"
+Output: "10101"
+
