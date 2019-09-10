@@ -1,0 +1,21 @@
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+//题意解读，对于给定的字符串数组，求出这些字符串的最长公共前缀
+//初步设想：以第一个元素为标准，分别从第一个字符开始，取出来再和其他的进行比较，如果全部相同则去下一位，有不同则结束
+
+Example 1:
+
+Input: ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+
+Input: ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Note:
+
+All given inputs are in lowercase letters a-z.

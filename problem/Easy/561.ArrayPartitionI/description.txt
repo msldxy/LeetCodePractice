@@ -1,0 +1,17 @@
+ Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.
+
+//题意解读：给定一个int数组，将其中两两分组，然后去这两个里面最小值，所有组的值加起来要最大是多少
+//初步设想：要使最后的结果最大，而每一个部分又是较小值，所以最大值应该和第二大值在一组中，依次类推
+//	第三大和第四大在一组......所以只需要排序就行了
+
+Example 1:
+
+Input: [1,4,3,2]
+
+Output: 4
+Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
+
+Note:
+
+    n is a positive integer, which is in the range of [1, 10000].
+    All the integers in the array will be in the range of [-10000, 10000].
