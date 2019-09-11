@@ -1,0 +1,16 @@
+Given a binary array, find the maximum number of consecutive 1s in this array.
+
+//题意：给定一个二进制的数组，即int数组其元素只有0和1，求出连续的1的最长长度
+//思路：创建一个新的数组，设置index，遍历原来的，如果是0，arr[index]=0,index++，如果是1,arr[index]++。
+
+Example 1:
+
+Input: [1,1,0,1,1,1]
+Output: 3
+Explanation: The first two digits or the last three digits are consecutive 1s.
+    The maximum number of consecutive 1s is 3.
+
+Note:
+
+    The input array will only contain 0 and 1.
+    The length of input array is a positive integer and will not exceed 10,000
