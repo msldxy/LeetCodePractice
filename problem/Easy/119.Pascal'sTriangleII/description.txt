@@ -1,0 +1,19 @@
+Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
+
+Note that the row index starts from 0.
+
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+
+//题意：给一个数字k，求出按照规律的第k+1行的数组
+//规律为，从第0行开始，按照金字塔形状，分别是1，2，3，4。。。第0行是一个，最后求第k行，其中数组第一个和最后一个都是1，然后其他的每一个都是上面相邻两个的和
+//思路：可以通过数学规律找到其中每一个的规律，最后直接求出数组
+
+Example:
+
+Input: 3
+Output: [1,3,3,1]
+
+Follow up:
+
+Could you optimize your algorithm to use only O(k) extra space?

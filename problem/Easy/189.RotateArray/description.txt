@@ -1,0 +1,29 @@
+Given an array, rotate the array to the right by k steps, where k is non-negative.
+
+//题意：轮转一个数组，即对于一个数组，给一个int数，数字代表次数，就是将所有的值都往右边移的位数，最右边的又重新进入最左边
+//要求，三个方法
+//思路：第一个：暴力求解，使用双循环，第一层就是次数，第二层就移一位；
+	第二个：新创建一个数组，让它们值一样，然后分别移位赋值就行；这个方法还有个变种，就是新的数组最后直接得到答案需要的
+	第三个：可以通过一定的取巧，先把数组倒置，再把前n为倒置，后面的再倒置
+
+Example 1:
+
+Input: [1,2,3,4,5,6,7] and k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
+
+Example 2:
+
+Input: [-1,-100,3,99] and k = 2
+Output: [3,99,-1,-100]
+Explanation: 
+rotate 1 steps to the right: [99,-1,-100,3]
+rotate 2 steps to the right: [3,99,-1,-100]
+
+Note:
+
+    Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
+    Could you do it in-place with O(1) extra space?
