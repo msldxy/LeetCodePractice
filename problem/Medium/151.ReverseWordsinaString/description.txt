@@ -1,0 +1,21 @@
+Given an input string, reverse the string word by word.
+
+//题意：给一个字符串的句子（英文），将其单词顺序倒置
+//思路：将字符串按空格分成字符串数组，每一个元素就是一个单词或者为字符串什么都没有即“”（这个情况是多个空格连在一起的时候出现的）
+//然后再将数组倒置并加空格
+Example 1:
+
+Input: "the sky is blue"
+Output: "blue is sky the"
+
+Example 2:
+
+Input: "  hello world!  "
+Output: "world! hello"
+Explanation: Your reversed string should not contain leading or trailing spaces.
+
+Example 3:
+
+Input: "a good   example"
+Output: "example good a"
+Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
