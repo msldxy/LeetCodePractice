@@ -1,0 +1,16 @@
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+//题意：给一个int数组，将所有的0都移到最右边
+//思路：遍历数组，将两个索引，第一个为0不做操作，第一个不为0赋值给第二个，第二个移位
+
+Example:
+
+Input: [0,1,0,3,12]
+Output: [1,3,12,0,0]
+
+Note:
+
+    You must do this in-place without making a copy of the array.
+    Minimize the total number of operations.
+
+//在一个数组内改变，不创建新的数组
